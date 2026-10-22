@@ -8,7 +8,7 @@ const order = require('./routes/order');
 const errorMiddleware = require('./middleware/error');
 
 app.use(cors({
-    origin: "https://itcp318-arq-frontend.onrender.com",
+    origin: process.env.CLIENT_URI,
     credentials: true
 }));
 app.use(cookieParser());
