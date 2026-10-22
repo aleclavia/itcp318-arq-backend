@@ -8,7 +8,7 @@ const order = require('./routes/order');
 const errorMiddleware = require('./middleware/error');
 
 app.use(cors({
-    origin: process.env.CLIENT_URI,
+    origin: process.env.CLIENT_URL,
     credentials: true
 }));
 app.use(cookieParser());
